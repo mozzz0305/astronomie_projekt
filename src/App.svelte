@@ -1,4 +1,6 @@
 <script>
+import Navbar from "./lib/Navbar.svelte";
+
   const apiKey = import.meta.env.VITE_API_KEY;
   console.log("key: " + apiKey);
 
@@ -33,6 +35,7 @@
 </script>
 
 <main>
+  <Navbar />
   {#each picData as pic}
   <h1>{pic.title}</h1>
     <img src={pic.url} alt={pic.title} />
