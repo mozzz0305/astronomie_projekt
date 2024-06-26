@@ -1,3 +1,5 @@
+<!-- Wie zeigt man an ob "Game" oder "Info" ausgewählt ist? -->
+
 <script>
     // Script-Inhalt, falls benötigt
 </script>
@@ -5,6 +7,7 @@
 <main>
     <nav>
         <h1>MEMORY</h1>
+        
         <ul>
             <li>
                 <a href="#">Game</a>
