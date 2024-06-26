@@ -1,14 +1,11 @@
 <script>
   import Navbar from "./lib/Navbar.svelte";
+  import Field from "./lib/Field.svelte";
   import Card from "./lib/Card.svelte";
-
-  let bspPic = "assets/bspPic.jpg";
+  import { apods } from "./store.js";
 
   const apiKey = import.meta.env.VITE_API_KEY;
   console.log("key: " + apiKey);
-
-  let title = "";
-  let picData = [{ title: "" }];
 
   async function fetchNASAPic() {
     const response = await fetch(
@@ -16,10 +13,7 @@
     );
 
     const data = await response.json();
-    picData = [...data];
-    // title = picData[0].title;
-    // console.log("Das ist der Titel " + title);
-    console.log(picData);
+    $apods = [...data];
   }
 
   fetchNASAPic();
@@ -27,11 +21,17 @@
 
 <main>
   <Navbar />
-  <Card pic={picData[0].url} picTitle={picData[0].title}/>
-  {#each picData as pic}
-    <h1>{pic.title}</h1>
-    <img src={pic.url} alt={pic.title} />
-  {/each}
+  <Field />
+  {#if $apods.length === 0}
+    <h1>Loading...</h1>
+  {/if}
+  {#if $apods.length > 0}
+    <Card pic={$apods[0].url} picTitle={$apods[0].title} />
+    {#each $apods as pic}
+      <h1>{pic.title}</h1>
+      <img src={pic.url} alt={pic.title} />
+    {/each}
+  {/if}
 </main>
 
 <style>

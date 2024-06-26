@@ -1,7 +1,6 @@
 <script>
     export let pic;
     export let picTitle;
-
     // Variable to track the opacity state
     let isOpaque = false;
 
@@ -13,7 +12,12 @@
 
 <main>
     <div class="card">
-        <img src="{pic}" alt="{picTitle}" on:click="{toggleOpacity}" class:opaque={isOpaque}>
+        <img
+            src={pic}
+            alt={picTitle}
+            on:click={toggleOpacity}
+            class:opaque={isOpaque}
+        />
     </div>
 </main>
 
@@ -21,7 +25,7 @@
     .card {
         width: 120px;
         height: 120px;
-        background-color: #B664C4;
+        background-color: #b664c4;
         border-radius: 5px;
         display: flex;
         align-items: center;
@@ -36,6 +40,7 @@
         border-radius: 2px;
         opacity: 0;
         transition: opacity 0.3s ease;
+        object-fit: cover;
     }
 
     .opaque {
