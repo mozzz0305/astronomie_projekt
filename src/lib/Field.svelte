@@ -25,5 +25,6 @@
         border: 3px solid white;
         border-radius: 100px;
         padding: 100px 100px;
+        overflow: auto;
     }
 </style>

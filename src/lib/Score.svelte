@@ -23,4 +23,13 @@
         background-color: rgba(77, 77, 77, 0.3);
         backdrop-filter: blur(30px);
         border: 3px solid white;
-        borde
+        border-radius: 50px;
+        padding: 10px 40px;
+    }
+
+    p {
+        font-size: 60px;
+        font-weight: bold;
+        color: white;
+    }
+</style>
