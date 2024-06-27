@@ -1,7 +1,6 @@
 <!-- Wie zeigt man an ob "Game" oder "Info" ausgewählt ist? -->
 
 <script>
-    // Script-Inhalt, falls benötigt
 </script>
 
 <main>
@@ -24,7 +23,7 @@
 <style>
     nav {
         position: fixed;
-        top: 85%;
+        top: calc(100vh - 10% - 50px);
         left: 50%;
         transform: translateX(-50%);
         width: 600px;
@@ -32,7 +31,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: rgba(139, 139, 139, 0.3);
+        background-color: rgba(77, 77, 77, 0.3);
         backdrop-filter: blur(30px);
         border: 3px solid white;
         border-radius: 50px;
@@ -66,4 +65,7 @@
         width: 30px;
         height: 30px;
         display: flex;
-  
+        align-items: center;
+        justify-content: center;
+    }
+</style>

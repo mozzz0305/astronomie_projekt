@@ -1,6 +1,6 @@
 <script>
     export let pic;
-    export let picTitle;
+    export let title;
     // Variable to track the opacity state
     let isOpaque = false;
 
@@ -12,12 +12,7 @@
 
 <main>
     <div class="card">
-        <img
-            src={pic}
-            alt={picTitle}
-            on:click={toggleOpacity}
-            class:opaque={isOpaque}
-        />
+        <img src={pic} alt={title} on:click={toggleOpacity} class:opaque={isOpaque}/>
     </div>
 </main>
 
