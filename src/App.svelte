@@ -1,8 +1,11 @@
 <script>
+  import Router from "svelte-spa-router";
   import Navbar from "./lib/Navbar.svelte";
   import Field from "./lib/Field.svelte";
   import Score from "./lib/Score.svelte";
   import { apods } from "./store.js";
+    import Cards from "./lib/Cards.svelte";
+    import Info from "./lib/Info.svelte";
 
   const apiKey = import.meta.env.VITE_API_KEY;
 
@@ -16,6 +19,10 @@
   }
 
   fetchNASAPic();
+
+  const routes = {
+        "/Game": Score,
+    };
 </script>
 
 <main>
@@ -25,7 +32,8 @@
   <img src="/Star.svg" alt="Star" class="star4">
   <Field />
   <Navbar />
-  <Score />
+  <!-- <Score /> -->
+  <Router {routes} />
 </main>
 
 <style>

@@ -9,10 +9,10 @@
         
         <ul>
             <li>
-                <a href="#">Game</a>
+                <a href="#/Game">Game</a>
             </li>
             <li>
-                <a href="#">Info</a>
+                <a href="#/Info">Info</a>
             </li>
         </ul>
         <!-- <div>Game</div>

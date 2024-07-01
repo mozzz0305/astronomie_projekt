@@ -1,12 +1,19 @@
 <script>
+    import Router from "svelte-spa-router";
     import Cards from "./Cards.svelte";
     import Infos from "./Infos.svelte";
+
+    const routes = {
+        "/Game": Cards,
+        "/Info": Infos,
+    };
 </script>
 
 <main>
     <div class="field">
         <!-- <Cards /> -->
-        <Infos />
+        <!-- <Infos /> -->
+        <Router {routes} />
     </div>
 </main>
 
