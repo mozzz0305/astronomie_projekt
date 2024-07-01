@@ -21,4 +21,9 @@
     </div>
 </main>
 
-<style></style>
+<style>
+    .wrapper{
+        position:absolute;
+        width: calc(90vw - 206px)
+    }
+</style>

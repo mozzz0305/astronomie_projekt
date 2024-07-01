@@ -11,7 +11,7 @@
 
   async function fetchNASAPic() {
     const response = await fetch(
-      "https://api.nasa.gov/planetary/apod?api_key=jGsfUORw1kINP66gGYaU5cvLqrIXTh6NTanfXE8g&count=12",
+      "https://api.nasa.gov/planetary/apod?api_key=jGsfUORw1kINP66gGYaU5cvLqrIXTh6NTanfXE8g&count=12&thumbs=true",
     );
 
     const data = await response.json();

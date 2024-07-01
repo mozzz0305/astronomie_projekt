@@ -21,6 +21,8 @@
 
 <style>
     .wrapper {
+        position:absolute;
+        width: calc(90vw - 206px);
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
