@@ -1,10 +1,9 @@
 <script>
     export let pic;
     export let title;
-    // Variable to track the opacity state
+
     let isOpaque = false;
 
-    // Function to toggle opacity
     function toggleOpacity() {
         isOpaque = !isOpaque;
     }

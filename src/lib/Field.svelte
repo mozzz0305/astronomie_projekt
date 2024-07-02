@@ -28,6 +28,7 @@
         display: flex;
         /* align-items: center; */
         background-color: rgba(77, 77, 77, 0.3);
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         border: 3px solid white;
         border-radius: 100px;
