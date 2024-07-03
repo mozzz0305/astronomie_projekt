@@ -50,6 +50,7 @@
         display: flex;
         justify-content: space-around;
         list-style-type: none;
+        padding: 0px;
     }
 
     a {
@@ -59,14 +60,18 @@
         font-size: 30px;
     }
 
-    .info-button {
-        background-color: white;
-        color: black;
-        border-radius: 50%;
-        width: 30px;
-        height: 30px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    a:hover {
+        color: grey;
     }
+
+@media (max-width: 600px) {
+    nav{
+        justify-content: center;
+        width: 90vw;
+    }
+
+    h1{
+        display: none;
+    }
+}
 </style>

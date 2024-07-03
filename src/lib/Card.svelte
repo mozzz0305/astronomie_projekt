@@ -24,8 +24,14 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 5px;
         box-sizing: border-box;
+        border: 2px solid #DADADA;
+    }
+    
+    .card:hover {
+        cursor: pointer;
+        scale: 1.03;
+        transition: scale 0.1s ease;
     }
 
     img {

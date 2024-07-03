@@ -11,7 +11,7 @@
 
   async function fetchNASAPic() {
     const response = await fetch(
-      "https://api.nasa.gov/planetary/apod?api_key=jGsfUORw1kINP66gGYaU5cvLqrIXTh6NTanfXE8g&count=12&thumbs=true",
+      `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=12&thumbs=true`,
     );
 
     const data = await response.json();
@@ -30,6 +30,8 @@
   <img src="/Star.svg" alt="Star" class="star2">
   <img src="/Star.svg" alt="Star" class="star3">
   <img src="/Star.svg" alt="Star" class="star4">
+  <img src="/Star.svg" alt="Star" class="star5">
+  <img src="/Star.svg" alt="Star" class="star6">
   <Field />
   <Navbar />
   <!-- <Score /> -->
@@ -42,7 +44,7 @@
   }
   .star1{
     scale: 1;
-    top: 10%;
+    top: 20%;
     left: 10%;
   }
   .star2{
@@ -53,11 +55,21 @@
   .star3{
     scale: 0.5;
     top: 80%;
-    left: 10%;
+    left: 15;
   }
   .star4{
-    scale: 0.55;
-    top: 80%;
-    left: 80%;
+    scale: 0.8;
+    top: 70%;
+    left: 60%;
+  }
+  .star5{
+    scale: 1;
+    top: 35%;
+    left: 50%;
+  }
+  .star6{
+    scale: 0.5;
+    top: 5%;
+    left: 35%;
   }
 </style>

@@ -72,4 +72,51 @@
         color: white;
         padding-left: 25px;
     }
+
+    @media (max-width: 900px) {
+        h1 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .infobox {
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 35px 20px 180px;
+            max-height: 300px;
+        }
+
+        img {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 2px;
+            padding-bottom: 10px;
+        }
+
+        h1 {
+            grid-column: 1 / 2;
+            grid-row: 2/3;
+            font-size: 20px;
+            padding-left: 0px;
+        }
+
+        h6 {
+            grid-column: 1 / 2;
+            grid-row: 3/4;
+            font-size: 12px;
+            margin-right: 0px;
+            text-align: left;
+            padding-bottom: 10px;
+        }
+
+        p {
+            grid-column: 1 / 2;
+            grid-row: 4/5;
+            font-size: 10px;
+            padding-left: 0px;
+        }
+    }
 </style>
